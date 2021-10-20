@@ -113,6 +113,16 @@ img{
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
+.bd-grids{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
 .l-header{
   width: 100%;
   position: fixed;
@@ -432,6 +442,10 @@ img{
   .work__container{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+  .work__containers{
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
   .contact__form{
